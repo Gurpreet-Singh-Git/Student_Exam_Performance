@@ -63,16 +63,15 @@ df = pd.concat([
 ], axis=1)
 
 
+
 # Seperate categorical and numerical columns
-num_cols = df.select_dtypes(include="number").columns
 cat_cols = df.select_dtypes(include="object").columns
-
-pd.set_option("display.max_columns", None)
-
-#print(df.head(10))
+num_cols = df.select_dtypes(include="number").columns
 
 
 
 
-# imputer = KNNImputer(n_neighbors=10)
+
+
+#pd.set_option("display.max_columns", None)
 
